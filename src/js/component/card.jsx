@@ -5,15 +5,15 @@ import React from "react";
 const Card = (props) => {
   return (
     <div
-      className="card rounded d-flex justify-content-center align-items-center justify-content-center"
+      className="card border-0 d-flex justify-content-center align-items-center justify-content-center"
       style={{
         background: "black",
         height: props.heigth ? props.heigth:"9vw",
         width: props.width ? props.width:"9%",
         color: "white",
         fontSize: "4vw",
-        fontWeight: "bolder",
-        boxShadow: "0px 0px 10px lightgrey",
+        fontWeight: "600",
+        boxShadow: "0px 0px 1px",
       }}
     >
       {props.value || props.value === 0? (
@@ -22,7 +22,7 @@ const Card = (props) => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          style={{ width: props.clockSize ? props.clockSize : "20%" }}
+          style={{ width: props.clockSize ? props.clockSize : "65%" }}
         >
           <path
             fill="#ffffff"
